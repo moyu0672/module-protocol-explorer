@@ -76,7 +76,7 @@ const mmf: SffCode[] = [
   {code:0x12,name:"800GBASE-SR8",lanes:8,modulation:"PAM4"},{code:0x20,name:"800GBASE-VR8",lanes:8,modulation:"PAM4"},
   {code:0x21,name:"800G-VR4.2",lanes:8,modulation:"PAM4"},{code:0x22,name:"800G-SR4.2",lanes:8,modulation:"PAM4"},
   {code:0x23,name:"1.6T-VR8.2",lanes:16,modulation:"PAM4"},{code:0x24,name:"1.6T-SR8.2",lanes:16,modulation:"PAM4"},
-].map(x=>({...x,family:"MMF"}));
+].map(x=>({...x,family:"MMF"} as SffCode));
 
 const smf: SffCode[] = [
   {code:0x00,name:"Undefined"},{code:0x04,name:"10GBASE-LR"},{code:0x05,name:"10GBASE-ER"},{code:0x07,name:"25GBASE-LR"},{code:0x08,name:"25GBASE-ER"},
@@ -95,7 +95,7 @@ const smf: SffCode[] = [
   {code:0x79,name:"800GBASE-FR4-500",lanes:4,modulation:"PAM4"},{code:0x7A,name:"800GBASE-FR4",lanes:4,modulation:"PAM4"},
   {code:0x7B,name:"800GBASE-LR4",lanes:4,modulation:"PAM4"},{code:0x7F,name:"1.6TBASE-DR8",lanes:8,modulation:"PAM4"},
   {code:0x80,name:"1.6TBASE-DR8-2",lanes:8,modulation:"PAM4"},
-].map(x=>({...x,family:"SMF"}));
+].map(x=>({...x,family:"SMF"} as SffCode));
 
 const passive: SffCode[] = [
   {code:0x00,name:"Undefined",family:"Passive / linear copper"},{code:0x01,name:"Copper cable",family:"Passive / linear copper"},
